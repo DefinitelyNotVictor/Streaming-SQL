@@ -35,7 +35,7 @@ CREATE TABLE `user`(
     FOREIGN KEY (plan_id) REFERENCES plan(id)
 );
 
-<ins> movie </ins>
+`movie`
 Stores movie details.
 
 CREATE TABLE movie(
@@ -45,7 +45,7 @@ CREATE TABLE movie(
     duration TIME
 );
 
-<ins> actor </ins>
+`actor`
 Stores actor information.
 
 CREATE TABLE actor(
@@ -53,7 +53,7 @@ CREATE TABLE actor(
     `name` VARCHAR(30)
 );
 
-<ins> category </ins>
+`category`
 Stores movie categories.
 
 CREATE TABLE category(
@@ -61,7 +61,7 @@ CREATE TABLE category(
     `name` VARCHAR(15)
 );
 
-<ins> watched </ins>
+`watched`
 Stores records of watched movies.
 
 CREATE TABLE watched(
@@ -73,7 +73,7 @@ CREATE TABLE watched(
     FOREIGN KEY (movie_id) REFERENCES movie(id)
 );
 
-<ins> actor_movie </ins>
+`actor_movie`
 Links actors to movies.
 
 CREATE TABLE actor_movie(
@@ -83,7 +83,7 @@ CREATE TABLE actor_movie(
     FOREIGN KEY (movie_id) REFERENCES movie(id)
 );
 
-<ins> category_movie </ins>
+`category_movie`
 Links categories to movies.
 
 CREATE TABLE category_movie(
