@@ -14,7 +14,7 @@ This creates and selects the streaming database.
 
 ## 2. Tables
 
-<ins> plan </ins> 
+`plan` 
 Stores subscription plans.
 
 CREATE TABLE plan(
@@ -23,7 +23,7 @@ CREATE TABLE plan(
     price FLOAT NOT NULL
 );
 
-<ins> user </ins>
+`user`
 Stores user details including their subscription plan.
 
 CREATE TABLE `user`(
